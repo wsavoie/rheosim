@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{53A056AA-8F3D-4E4D-BDAC-22242D240F2A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ChronoCode\chrono\src;D:\ChronoCode\chrono\src\collision\bullet;D:\ChronoCode\chrono\src\collision\gimpact;D:\ChronoCode\chrono\src\collision\convexdecomposition\HACD;D:\ChronoCode\irrlicht-1.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ChronoCode\chrono\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/ChronoCode/chrono/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/ChronoCode/chrono/src -BD:/ChronoCode/chrono_build --check-stamp-file D:\ChronoCode\chrono_build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/ChronoCode/chrono/src/CMakeLists.txt;D:\ChronoCode\chrono\src\CMakeLists.txt;D:\ChronoCode\chrono_build\CMakeFiles\3.2.1\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\ChronoCode\chrono_build\CMakeFiles\3.2.1\CMakeCCompiler.cmake;D:\ChronoCode\chrono_build\CMakeFiles\3.2.1\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;D:\ChronoCode\chrono_build\CMakeFiles\3.2.1\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindOpenMP.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CPack.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CPackComponent.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Templates\CPackConfig.cmake.in;D:\Program Files (x86)\CMake\share\cmake-3.2\Templates\CPackConfig.cmake.in;D:\ChronoCode\chrono\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ChronoCode\chrono_build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/ChronoEngine.vcxproj">
+      <Project>AEC1B43A-9E72-4AC8-A924-86C6F8210062</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/ConsoleApplication1.vcxproj">
+      <Project>377A43D2-B1AB-4CD0-8BC2-0B536DB54E4E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/ZERO_CHECK.vcxproj">
+      <Project>C20CB503-C8D5-4F3F-9272-55629F6125B7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/cone.vcxproj">
+      <Project>97D89648-11E9-4FAC-ACF1-F49141036F12</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/lcp_solver/demo_LCPsolver.vcxproj">
+      <Project>9715AB62-B7C4-44C0-8380-8920E6E12BD5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_ballDEM.vcxproj">
+      <Project>3BAC3048-8C0E-4AFC-B7BD-6A0EE28289E9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_benchmark.vcxproj">
+      <Project>4C8C0367-5407-4636-9AB4-3B194491C608</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_bricks.vcxproj">
+      <Project>61C2CC1B-AE63-43E3-A334-3C3C6E6BE2E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/basics/demo_buildsystem.vcxproj">
+      <Project>C07D5947-FF64-45F3-A5CD-C10D03BC64BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/basics/demo_chfunctions.vcxproj">
+      <Project>8C846810-55E5-44D7-BF8D-9CE1D1DDD7FE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_cohesion.vcxproj">
+      <Project>AE37456D-3BB3-482A-BCD9-9C12CC46E282</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_collision.vcxproj">
+      <Project>4B4648B2-A082-4ED2-B08A-2C36CA72BD74</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_collisionDEM.vcxproj">
+      <Project>D8D42A4C-E545-430B-9066-81F88B5DAB4B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_convergence.vcxproj">
+      <Project>24A1A78F-8E7C-496D-8DFB-F2B828B891E1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_conveyor.vcxproj">
+      <Project>AB7974D6-1216-469A-9ED6-52B013444E1B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/core/demo_coords.vcxproj">
+      <Project>3AE8BB17-06D4-482E-AEDB-04509C5CBABD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_crank.vcxproj">
+      <Project>FE01A64A-897B-4510-AABC-DAB45E812AD5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_decomposition.vcxproj">
+      <Project>1957DAE4-BAB9-4FCE-88EA-038D25BB8283</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_emit_cluster.vcxproj">
+      <Project>F66EA029-BCF0-4B2F-96A6-F11B2EDB933E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_emitter.vcxproj">
+      <Project>B3369A83-7B52-40FA-975A-DBED8A0DDE3F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_forklift.vcxproj">
+      <Project>AFB57516-7BDD-4EA4-B68B-9EA995710EF3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_fourbar.vcxproj">
+      <Project>D8B95CE8-9074-4B30-A705-3692167C6CE9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_friction.vcxproj">
+      <Project>44447C4A-C74A-4B3E-BD93-23A123B6E69B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_gears.vcxproj">
+      <Project>F1ACC4BC-D2E1-4270-A1E6-A04BEC6C3836</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_irr_assets.vcxproj">
+      <Project>E71A4E19-C203-481E-8DB4-D5903F581C34</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/core/demo_math.vcxproj">
+      <Project>DEDDD6E9-598D-4998-942F-2A1A06B86DEF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_mecanum.vcxproj">
+      <Project>AB6125BD-B5BC-466B-9A5B-D3EE71727ED1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_pendulum.vcxproj">
+      <Project>9E681D23-2CDC-402D-8A01-C861452950B8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/basics/demo_powertrain.vcxproj">
+      <Project>2F9960F9-FA32-4D1F-B21D-B8727162B9ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/core/demo_sharedptr.vcxproj">
+      <Project>E79F6E13-14C6-44F8-AA9C-6053D6FE7685</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_soilbin.vcxproj">
+      <Project>E0A0F8C4-37B3-4B4B-B624-4415E7B16AF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_sph.vcxproj">
+      <Project>DD10A0D2-0EDC-4A32-8EA7-64D6464F9798</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/core/demo_stream.vcxproj">
+      <Project>B1EC0EBA-7AC3-47D4-83FF-07A9B0D5DE6F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_suspension.vcxproj">
+      <Project>4C9F2DF0-2FE4-4204-8CC7-159751A9A0B2</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_tire.vcxproj">
+      <Project>F9227F9A-E192-4274-B011-BEADDA155F3B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/ChronoCode/chrono_build/demos/irrlicht/demo_tracks.vcxproj">
+      <Project>0A48D881-D876-40B2-A3F9-E9E8F855999D</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

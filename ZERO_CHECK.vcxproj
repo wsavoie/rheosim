@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C20CB503-C8D5-4F3F-9272-55629F6125B7}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\ChronoCode\chrono\src;D:\ChronoCode\chrono\src\collision\bullet;D:\ChronoCode\chrono\src\collision\gimpact;D:\ChronoCode\chrono\src\collision\convexdecomposition\HACD;D:\ChronoCode\irrlicht-1.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ChronoCode\chrono_build\CMakeFiles\bcb6f9112093d9309889991eeed670f7\generate.stamp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/ChronoCode/chrono/src -BD:/ChronoCode/chrono_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "$(SolutionPath)"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/ChronoCode/chrono_build/CMakeFiles/bcb6f9112093d9309889991eeed670f7/generate.stamp.rule;D:\ChronoCode\chrono\src\CMakeLists.txt;D:\ChronoCode\chrono\src\demos\CMakeLists.txt;D:\ChronoCode\chrono\src\demos\basics\CMakeLists.txt;D:\ChronoCode\chrono\src\demos\core\CMakeLists.txt;D:\ChronoCode\chrono\src\demos\irrlicht\CMakeLists.txt;D:\ChronoCode\chrono\src\demos\lcp_solver\CMakeLists.txt;D:\ChronoCode\chrono\src\unit_CASCADE\CMakeLists.txt;D:\ChronoCode\chrono\src\unit_COSIMULATION\CMakeLists.txt;D:\ChronoCode\chrono\src\unit_FEM\CMakeLists.txt;D:\ChronoCode\chrono\src\unit_JS\CMakeLists.txt;D:\ChronoCode\chrono\src\unit_MATLAB\CMakeLists.txt;D:\ChronoCode\chrono\src\unit_POSTPROCESS\CMakeLists.txt;D:\ChronoCode\chrono\src\unit_PYTHON\CMakeLists.txt;D:\ChronoCode\chrono_build\CMakeFiles\3.2.1\CMakeCCompiler.cmake;D:\ChronoCode\chrono_build\CMakeFiles\3.2.1\CMakeCXXCompiler.cmake;D:\ChronoCode\chrono_build\CMakeFiles\3.2.1\CMakeRCCompiler.cmake;D:\ChronoCode\chrono_build\CMakeFiles\3.2.1\CMakeSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeParseArguments.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CPack.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\CPackComponent.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindOpenMP.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\FindPackageMessage.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake\share\cmake-3.2\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ChronoCode\chrono_build\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\unit_MATLAB\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\unit_JS\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\unit_CASCADE\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\unit_POSTPROCESS\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\unit_COSIMULATION\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\unit_FEM\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\unit_PYTHON\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\demos\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\demos\basics\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\demos\benchmarks\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\demos\core\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\demos\lcp_solver\CMakeFiles\generate.stamp;D:\ChronoCode\chrono_build\demos\irrlicht\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
