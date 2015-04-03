@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ChronoCode\chrono\src\demos\core\demo_math.cpp">
+      <Filter>demos\basics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ChronoCode\chrono\src\demos\core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="demos\basics">
+      <UniqueIdentifier>{CA4804F3-8D38-4822-A19C-2B4AD5234670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="demos">
+      <UniqueIdentifier>{646B1846-7010-4623-AD13-0BDB6C9ABCFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
